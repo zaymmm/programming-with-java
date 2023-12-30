@@ -26,13 +26,14 @@ class Printer{
     }
 }
 public class Main {
+	
     public static void main(String[] args) {
         String str = "Zay mmm";
         Printer printer = new Printer();
         printer.print_v1(str);
+        
 
-
-        printer.print_v2(str, new Parser() { // step -1
+        /*printer.print_v2(str, new Parser() { // step -1
             @Override
             public String parse(String s) {// anonymous class
                 return StringParser.convert(s);
@@ -43,7 +44,7 @@ public class Main {
 
          printer.print_v2(str, (s -> StringParser.convert(s))); // step-3
 
-         printer.print_v2(str, (StringParser::convert)); // step-4
+         printer.print_v2(str, (StringParser::convert)); // step-4*/
 
 
     }

@@ -6,7 +6,7 @@ public class ClassB implements InterfaceI{
         System.out.println(">>> ClassB.show() >>>");
     }
 
-//    public void message(){
-//        System.out.println(">>> ClassB.message() >>> ");
-//    }
+    public void message(){
+        System.out.println(">>> ClassB.message() >>> ");
+    }
 }

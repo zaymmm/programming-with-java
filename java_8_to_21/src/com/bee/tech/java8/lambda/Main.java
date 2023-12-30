@@ -10,15 +10,17 @@ public class Main {
         List<Integer> values = Arrays.asList(1, 2, 3, 4, 5);
 
         values.forEach(i -> System.out.println("Lambda: " + i)); // Lambda
+        
 
         // Consumer
-        Consumer<Integer> c = new Consumer<Integer>() {
+        Consumer<Integer> c = new Consumer<Integer>() { // Anonymous Interface
             @Override
             public void accept(Integer integer) {
                 System.out.println("Consumer1: " + integer);
             }
         };
         values.forEach(c);
+        
 
         Consumer<Integer> consumer = (Integer integer) -> System.out.println("Consumer2: " + integer);
         values.forEach(consumer);

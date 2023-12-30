@@ -1,5 +1,6 @@
 package com.bee.tech.java8.method_references;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -17,6 +18,12 @@ class Person {
     void printInstance(String message) {
         System.out.println(name + ": " + message);
     }
+
+	public String getName() {
+		return name;
+	}
+    
+    
 }
 
 public class DemoMethodReference {
@@ -35,9 +42,14 @@ public class DemoMethodReference {
         names.forEach(Person::printStatic);
 
         // Constructor Reference
+        
+        List<Person> listPerson = new ArrayList<>();
+       
+        
         List<Person> persons = Arrays.asList("Mike", "Jane", "Eve")
-                .stream()
-                .map(Person::new)
-                .toList();
+        		.stream()
+        		.map(Person::new)
+        		.toList();
+        		
     }
 }
