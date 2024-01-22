@@ -8,8 +8,8 @@ public class Main {
     public static void main(String[] args) {
 
         List<Integer> values = Arrays.asList(1, 2, 3, 4, 5);
-
-        values.forEach(i -> System.out.println("Lambda: " + i)); // Lambda
+        
+       values.forEach(i -> System.out.println("Lambda: " + i)); // Lambda
         
 
         // Consumer
@@ -22,6 +22,8 @@ public class Main {
         values.forEach(c);
         
 
+        values.forEach(integer -> System.out.println("Lambda function: " + integer));
+        
         Consumer<Integer> consumer = (Integer integer) -> System.out.println("Consumer2: " + integer);
         values.forEach(consumer);
     }

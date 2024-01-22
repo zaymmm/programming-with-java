@@ -8,7 +8,7 @@ public class Main {
 		
 		Dog myDog = Dog.findDogByName("Joe");
 		
-		Optional<Dog> optionalDog = Dog.findDogByNameOptional("Joe");
+		Optional<Dog> optionalDog = Dog.findDogByNameOptional("Alex");
 		
 		if(optionalDog.isPresent()) {
 			System.out.println("Optional Dog: " + optionalDog.get().getName());
@@ -39,8 +39,8 @@ public class Main {
 		}
 		
 		public static Optional<Dog> findDogByNameOptional(String name){
-			// return Optional.of(null);
-			return Optional.ofNullable(new Dog("Joe", 3));
+			return Optional.of(null);
+			//return Optional.ofNullable(new Dog("Joe", 3));
 		}
 
 		public String getName() {

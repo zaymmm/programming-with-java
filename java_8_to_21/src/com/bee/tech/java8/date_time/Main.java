@@ -1,21 +1,31 @@
 package com.bee.tech.java8.date_time;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		// TODO LocalDate
+		// LocalDate
+		LocalDate localDate = LocalDate.now();
+		System.out.println("Localdate: " + localDate);
 
-		// TODO LocalTime
+		// LocalTime
+		LocalTime localTime = LocalTime.now();
+		System.out.println("Localtime: " + localTime);
 
-		// TODO LocalTime by zone id
+		// LocalTime by zone id
+		LocalTime time = LocalTime.now( 
+	            ZoneId.systemDefault());
+		System.out.println("Zone: " + time);
 
 		// TODO Instant
 
-		// TODO DateTimeFormatter
+		// DateTimeFormatter
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 		String formattedDateTime = LocalDateTime.now().format(formatter);
 		System.out.println(formattedDateTime);
