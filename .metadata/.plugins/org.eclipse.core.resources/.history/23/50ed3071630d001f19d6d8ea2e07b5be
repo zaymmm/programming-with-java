@@ -1,0 +1,5 @@
+package dev.zay.example.multiple.interfaces;
+
+public class ElectricVehicle {
+
+}

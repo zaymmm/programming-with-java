@@ -1,0 +1,10 @@
+package dev.zay.example.interfaces;
+
+public class ShapeTest {
+	
+	public static void main(String[] args) {
+
+		//programming for interfaces not implementation
+	}
+
+}

@@ -1,0 +1,7 @@
+package dev.zay.example.using.interfaces;
+
+public class Driver {
+	
+	private Vehicle vehicle;
+
+}
