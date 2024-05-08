@@ -1,5 +1,0 @@
-package dev.zay.example.interfaces;
-
-public class Circle implements Shape{
-
-}

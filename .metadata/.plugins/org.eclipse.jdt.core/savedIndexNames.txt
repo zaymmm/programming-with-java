@@ -1,5 +1,0 @@
-INDEX VERSION 1.134+/Users/zaymaungmaungmyint/zay/Workspace/programming-with-java/.metadata/.plugins/org.eclipse.jdt.core
-304088216.index
-637622538.index
-2432807125.index
-1865797976.index
